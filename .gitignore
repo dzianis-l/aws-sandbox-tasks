@@ -1,4 +1,5 @@
-.syndicate
-logs/
-.syndicate-config-*/
-.utils/**/*
+**/.syndicate
+**/logs/
+**/.syndicate-config-*/
+**/.utils/**/*
+.DS_Store
