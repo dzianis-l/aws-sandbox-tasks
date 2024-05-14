@@ -11,10 +11,10 @@
     "dependencies": [],
     "event_sources": [],
     "env_variables": {},
-    "publish_version": true,
-    "alias": "${lambdas_alias_name}",
+    "publish_version": false,
     "url_config": {
         "auth_type": "NONE"
     },
-    "ephemeral_storage": 512
+    "ephemeral_storage": 512,
+    "logs_expiration": "${logs_expiration}"
 }
