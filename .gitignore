@@ -1,5 +1,5 @@
 **/.syndicate
 **/logs/
 **/.syndicate-config-*/
-**/.utils/**/*
+**/scripts/**/*
 .DS_Store
