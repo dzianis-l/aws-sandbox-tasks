@@ -11,12 +11,12 @@
     "dependencies": [
         {
             "resource_name": "async_queue",
-            "resource_type": "sqs_queue"
+            "resource_type": "sqs_trigger"
         }
     ],
     "event_sources": [
         {
-            "resource_type": "sqs_queue",
+            "resource_type": "sqs_trigger",
             "target_queue": "async_queue",
             "batch_size": 10
         }
