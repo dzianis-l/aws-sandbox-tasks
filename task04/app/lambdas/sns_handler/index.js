@@ -1,5 +1,5 @@
 exports.handler = async (event) => {
-    console.log(event.Records[0].body);
+    console.log(JSON.stringify(event));
 
-    return 200;
+    return event;
 };
