@@ -11,7 +11,7 @@
     "dependencies": [
         {
             "resource_name": "async_queue",
-            "resource_type": "sqs_trigger"
+            "resource_type": "sqs_queue"
         }
     ],
     "event_sources": [
