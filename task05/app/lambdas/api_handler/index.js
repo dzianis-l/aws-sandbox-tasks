@@ -9,9 +9,10 @@ const log = {
 
 exports.handler = async (event) => {
     log.info(`Event: ${JSON.stringify(event)}`);
-    log.info(`TARGET_TABLE: ${tableName}`);
-    
+
     const tableName = process.env.TARGET_TABLE;
+    log.info(`TARGET_TABLE: ${tableName}`);
+
     const now = new Date();
     const isoFormat = now.toISOString();
 
@@ -35,7 +36,6 @@ exports.handler = async (event) => {
             createdAt: isoFormat,
             body: data,
         };
-        event = data;
     }
 
     const response = await dynamodb
@@ -49,6 +49,6 @@ exports.handler = async (event) => {
 
     return {
         statusCode: 201,
-        event,
+        event: item
     };
 };
