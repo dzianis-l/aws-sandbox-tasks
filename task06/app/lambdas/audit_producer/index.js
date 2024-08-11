@@ -43,7 +43,7 @@ exports.handler = async (event) => {
 
         await dynamoDB
             .put({
-                TableName: this.targetTable,
+                TableName: targetTable,
                 Item: auditData,
             })
             .promise();
