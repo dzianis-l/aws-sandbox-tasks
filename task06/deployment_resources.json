@@ -7,6 +7,12 @@
                         "logs:CreateLogGroup",
                         "logs:CreateLogStream",
                         "logs:PutLogEvents",
+                        "dynamodb:GetShardIterator",
+                        "dynamodb:DescribeStream",
+                        "dynamodb:GetRecords",
+                        "dynamodb:GetShardIterator",
+                        "dynamodb:ListStreams",
+                        "dynamodb:DescribeStream",
                         "dynamodb:GetItem",
                         "dynamodb:Query",
                         "dynamodb:PutItem",
@@ -14,12 +20,7 @@
                         "dynamodb:DeleteItem",
                         "ssm:PutParameter",
                         "ssm:GetParameter",
-                        "kms:Decrypt",
-                        "dynamodb:GetRecords",
-                        "dynamodb:GetShardIterator",
-                        "dynamodb:ListStreams",
-                        "dynamodb:DescribeStream",
-                        "dynamodb:Batch*"
+                        "kms:Decrypt"
                     ],
                     "Effect": "Allow",
                     "Resource": "*"

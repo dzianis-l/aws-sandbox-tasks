@@ -25,8 +25,7 @@
         "region": "${region}",
         "TARGET_TABLE": "${target_table}"
     },
-    "publish_version": true,
-    "alias": "${lambdas_alias_name}",
+    "publish_version": false,
     "url_config": {},
     "ephemeral_storage": 512
 }
