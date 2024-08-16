@@ -1,0 +1,6 @@
+{
+    "name": "api_handler_layer",
+    "resource_type": "lambda_layer",
+    "runtimes": ["nodejs20.x"],
+    "deployment_package": "api_handler_layer.zip"
+}
