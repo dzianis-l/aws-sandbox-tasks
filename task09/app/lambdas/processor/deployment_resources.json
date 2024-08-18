@@ -1,0 +1,12 @@
+{
+    "processor-role": {
+        "predefined_policies": [
+            "AmazonDynamoDBFullAccess",
+            "AWSLambdaBasicExecutionRole",
+            "AWSXRayDaemonWriteAccess"
+        ],
+        "principal_service": "lambda",
+        "custom_policies": ["lambda-basic-execution"],
+        "resource_type": "iam_role"
+    }
+}
